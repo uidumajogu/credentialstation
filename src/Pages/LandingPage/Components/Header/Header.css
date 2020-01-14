@@ -1,0 +1,16 @@
+.HeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/assets/images/landingpage_header_bkg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 5vw;
+}
+
+.HeaderContainer h1 {
+  font-weight: bold;
+  font-size: 3.3vw;
+  line-height: 4vw;
+  color: #001b50;
+}
