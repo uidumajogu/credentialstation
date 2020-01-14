@@ -1,21 +1,31 @@
 import React, { Component } from "react";
 import "./Header.css";
+import NavBar from "../../../../Components/NavBar";
 
 export class Header extends Component {
   render() {
     return (
-      <div className="HeaderContainer">
-        <div style={{ width: "40%" }}>
-          <h1>
-            Digitize your Academic credential verification and transcript
-            transmission services in 4 easy steps
-          </h1>
-        </div>
+      <React.Fragment>
+        <NavBar
+          margin="2vw 5vw"
+          fixed={true}
+          logo={<img src="../assets/logo/name_logo.svg" />}
+          padding="1vw 3vw"
+          navButtons={["How it works", "About", "Contact"]}
+        />
+        <div className="HeaderContainer">
+          <div>
+            <h1>
+              Digitize your Academic credential verification and transcript
+              transmission services in 4 easy steps
+            </h1>
+          </div>
 
-        <div style={{ width: "60%" }}>
-          <img width="100%" src="../assets/images/graduation_cap.svg" />
+          <div>
+            <img width="100%" src="../assets/images/graduation_cap.svg" />
+          </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

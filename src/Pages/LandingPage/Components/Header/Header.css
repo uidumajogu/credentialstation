@@ -6,6 +6,15 @@
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 5vw;
+  min-height: 450px;
+}
+
+.HeaderContainer div:nth-child(1) {
+  width: 40%;
+}
+
+.HeaderContainer div:nth-child(2) {
+  width: 60%;
 }
 
 .HeaderContainer h1 {
