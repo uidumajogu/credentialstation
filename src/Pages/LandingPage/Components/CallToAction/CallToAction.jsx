@@ -3,6 +3,8 @@ import "./CallToAction.css";
 import Button from "../../../../Components/Button";
 
 export class CallToAction extends Component {
+  requestCSKey = buttonLabel => {};
+
   render() {
     return (
       <div className="CallToActionContainer">
@@ -20,7 +22,7 @@ export class CallToAction extends Component {
           borderRadius="50px"
           boxShadow="20px 20px 60px rgba(2, 8, 22, 0.4)"
           padding="20px 40px"
-          //   onClick={buttonLabel => this.navButtonClicked(buttonLabel)}
+          onClick={buttonLabel => this.requestCSKey(buttonLabel)}
         />
       </div>
     );
