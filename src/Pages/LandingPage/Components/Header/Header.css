@@ -5,9 +5,9 @@
   background: url("/assets/images/landingpage_header_bkg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 10vw 5vw;
+  padding: 20vw 5vw;
   min-height: 450px;
-  max-height: 800px;
+  max-height: 85vh;
 }
 
 .HeaderContainer div:nth-child(1) {
@@ -20,9 +20,10 @@
 
 .HeaderContainer h1 {
   font-weight: bold;
-  font-size: 3.3vw;
-  line-height: 4vw;
+  font-size: 2.5vw;
+  line-height: 3.5vw;
   color: #001b50;
+  margin-left: 5vw;
 }
 
 @media only screen and (max-width: 600px) {

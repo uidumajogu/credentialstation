@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./HowItWorks.css";
 import { RandomNumberGenerator } from "../../../../Functions/RandomNumberGenerator";
-import Topics from "../../../../Components/Topics";
+import Topics from "./Topics";
 
 const _howItWorksSteps = [
   { index: 1, description: "Request a cs Key" },
