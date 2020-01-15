@@ -3,7 +3,11 @@ import "./Features.css";
 
 export class Features extends Component {
   render() {
-    return <div className="FeaturesContainer"></div>;
+    return (
+      <div className="FeaturesContainer">
+        <h2>Why credential station?</h2>
+      </div>
+    );
   }
 }
 
