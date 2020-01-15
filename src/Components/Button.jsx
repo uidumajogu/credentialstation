@@ -39,23 +39,26 @@ export class Button extends Component {
         style={this.buttonStyle}
         onClick={() => this.buttonClicked(this.props.buttonLabel)}
       >
-        <div style={{ paddingRight: this.props.suffixIconPadding }}>
-          {this.props.suffixIconEmoji
-            ? this.props.suffixIcon && this.props.suffixIcon
-            : this.props.suffixIcon && (
-                <img
-                  style={this.buttonImageStyle}
-                  width={this.props.suffixIconWidth}
-                  height={
-                    this.props.suffixIconHeight
-                      ? this.props.suffixIconHeight
-                      : this.props.suffixIconWidth
-                  }
-                  src={this.props.suffixIcon}
-                  alt="Button Suffix Icon"
-                ></img>
-              )}
-        </div>
+        {(this.props.suffixIcon || this.props.suffixIconEmoji) && (
+          <div style={{ paddingRight: this.props.suffixIconPadding }}>
+            {this.props.suffixIconEmoji
+              ? this.props.suffixIcon && this.props.suffixIcon
+              : this.props.suffixIcon && (
+                  <img
+                    style={this.buttonImageStyle}
+                    width={this.props.suffixIconWidth}
+                    height={
+                      this.props.suffixIconHeight
+                        ? this.props.suffixIconHeight
+                        : this.props.suffixIconWidth
+                    }
+                    src={this.props.suffixIcon}
+                    alt="Button Suffix Icon"
+                  ></img>
+                )}
+          </div>
+        )}
+
         {this.props.buttonLabel ? this.props.buttonLabel : "No Label"}
       </button>
     );

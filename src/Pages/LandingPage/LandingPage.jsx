@@ -4,6 +4,7 @@ import InstitutionsGrid from "./Components/InstitutionsGrid/InstitutionsGrid";
 import Features from "./Components/Features/Features";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
 import CallToAction from "./Components/CallToAction/CallToAction";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 export class LandingPage extends Component {
   render() {
@@ -14,6 +15,7 @@ export class LandingPage extends Component {
         <Features />
         <HowItWorks />
         <CallToAction />
+        <ContactUs />
       </React.Fragment>
     );
   }
