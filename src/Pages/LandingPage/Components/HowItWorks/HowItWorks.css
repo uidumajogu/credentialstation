@@ -1,0 +1,54 @@
+.HowItWorksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/assets/images/how_it_works_bkg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5vw;
+  width: 100%;
+  /* min-height: 450px;
+  max-height: 800px; */
+}
+
+.HowItWorksContainer h2 {
+  text-align: center;
+  font-size: calc(12px + 1vw);
+  line-height: calc(14px + 2vw);
+  color: #ffffff;
+  margin: 0;
+}
+
+.HowItWorksContainer p {
+  font-size: calc(8px + 1vw);
+  line-height: calc(10px + 2vw);
+  color: #ffffff;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 0 3vw 0;
+}
+
+.HowItWorksContainer > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.HowItWorksContainer > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+}
+
+.HowItWorksContainer > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .HowItWorksContainer > div:nth-child(2) {
+    flex-direction: column;
+  }
+}

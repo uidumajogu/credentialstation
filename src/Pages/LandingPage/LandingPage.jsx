@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Components/Header/Header";
 import InstitutionsGrid from "./Components/InstitutionsGrid/InstitutionsGrid";
 import Features from "./Components/Features/Features";
+import HowItWorks from "./Components/HowItWorks/HowItWorks";
 
 export class LandingPage extends Component {
   render() {
@@ -10,6 +11,7 @@ export class LandingPage extends Component {
         <Header />
         <InstitutionsGrid />
         <Features />
+        <HowItWorks />
       </React.Fragment>
     );
   }
