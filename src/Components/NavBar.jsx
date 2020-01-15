@@ -24,7 +24,14 @@ export class NavBar extends Component {
     justifyContent: "center"
   };
 
+  navButtonClicked = navButtonName => {
+    this.props.onClickNavButton
+      ? this.props.onClickNavButton(navButtonName)
+      : console.log(navButtonName);
+  };
+
   render() {
+    // console.log(this.isSmallScreen);
     return (
       <div
         style={{
@@ -48,6 +55,9 @@ export class NavBar extends Component {
                     borderRadius="20px"
                     padding="5px"
                     margin="0 20px"
+                    onClick={navButtonName =>
+                      this.navButtonClicked(navButtonName)
+                    }
                   />
                 );
               })}

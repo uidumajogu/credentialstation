@@ -1,0 +1,47 @@
+.InstitutionsGridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf4ff;
+  padding: 5vw 10vw;
+}
+
+.InstitutionsGridContainer div:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+
+.InstitutionsGridContainer div:nth-child(2) {
+  width: 15%;
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(12px + 1vw);
+  line-height: calc(14px + 2vw);
+  color: #c28f09;
+}
+
+@media only screen and (max-width: 600px) {
+  .InstitutionsGridContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .InstitutionsGridContainer div:nth-child(1) {
+    flex: 1;
+    overflow: auto;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .InstitutionsGridContainer div:nth-child(1) div {
+    min-width: min-content;
+    display: flex;
+  }
+
+  .InstitutionsGridContainer div:nth-child(2) {
+    display: none;
+  }
+}

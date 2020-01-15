@@ -9,7 +9,9 @@ export class Header extends Component {
         <NavBar
           margin="2vw 5vw"
           fixed={true}
-          logo={<img src="../assets/logo/name_logo.svg" />}
+          logo={
+            <img src="../assets/logo/name_logo.svg" alt="Credential Station" />
+          }
           padding="1vw 3vw"
           navButtons={["How it works", "About", "Contact"]}
         />
@@ -22,7 +24,11 @@ export class Header extends Component {
           </div>
 
           <div>
-            <img width="100%" src="../assets/images/graduation_cap.svg" />
+            <img
+              width="100%"
+              src="../assets/images/graduation_cap.svg"
+              alt="Graduation Cap"
+            />
           </div>
         </div>
       </React.Fragment>
