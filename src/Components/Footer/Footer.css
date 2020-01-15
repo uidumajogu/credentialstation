@@ -1,0 +1,39 @@
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #001b50;
+}
+
+.FooterTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw;
+}
+
+.FooterBottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 20px;
+  border-top: solid 1px white;
+  color: #ffffff;
+}
+
+.FooterBottom h5 {
+  margin: 0;
+  opacity: 0.5;
+  font-size: calc(8px + 0.5vw);
+}
+
+.FooterBottom > div:nth-child(2) {
+  display: flex;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .FooterTop {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5vw 0;
+  }
+}

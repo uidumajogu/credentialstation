@@ -13,7 +13,7 @@ export class Header extends Component {
             <img src="../assets/logo/name_logo.svg" alt="Credential Station" />
           }
           padding="1vw 3vw"
-          navButtons={["How it works", "About", "Contact"]}
+          navButtons={["Documentation", "Get Started"]}
         />
         <div className="HeaderContainer">
           <div>
