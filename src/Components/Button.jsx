@@ -18,7 +18,8 @@ export class Button extends Component {
     padding: this.props.padding ? this.props.padding : "0",
     justifyContent: this.props.justifyContent
       ? this.props.justifyContent
-      : "center"
+      : "center",
+    boxShadow: this.props.boxShadow
   };
 
   buttonImageStyle = {
