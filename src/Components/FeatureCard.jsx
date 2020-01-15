@@ -4,14 +4,15 @@ export class FeatureCard extends Component {
   FeatureCardContainer = {
     display: "flex",
     flexDirection: "column",
-    //    justifyContent: "center",
-    alignItems: "center",
-    width: "300px",
+    justifyContent: "left",
+    width: "400px",
+    minWidth: "300px",
     background: this.props.background ? this.props.background : "#FFFFFF",
     border: this.props.border ? this.props.border : "1px solid #ECECEC",
     borderRadius: this.props.borderRadius ? this.props.borderRadius : "10px",
     margin: this.props.margin ? this.props.margin : "1vw",
-    padding: this.props.margin ? this.props.margin : "20px 0"
+    paddingTop: this.props.padding ? null : "calc(15px + 2vw",
+    padding: this.props.padding ? this.props.padding : "20px 0"
   };
 
   FeatureCardDetails = {

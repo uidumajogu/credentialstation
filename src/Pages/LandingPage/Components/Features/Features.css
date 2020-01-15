@@ -24,7 +24,7 @@
   margin: 0 0 3vw 0;
 }
 
-.FeaturesContainer div:nth-child(2) {
+.FeaturesContainer > div:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
