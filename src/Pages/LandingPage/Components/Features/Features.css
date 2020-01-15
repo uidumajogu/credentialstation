@@ -1,2 +1,33 @@
 .FeaturesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5vw 10vw;
+}
+
+.FeaturesContainer h2 {
+  text-align: center;
+  font-size: calc(12px + 1vw);
+  line-height: calc(14px + 2vw);
+  color: #001b50;
+  margin: 0;
+}
+
+.FeaturesContainer p {
+  font-size: calc(8px + 1vw);
+  line-height: calc(10px + 2vw);
+  color: #3b3b3b;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 0 3vw 0;
+}
+
+.FeaturesContainer div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
