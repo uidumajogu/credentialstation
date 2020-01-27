@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import "./Header.css";
 import NavBar from "../../../../Components/NavBar";
+import { withRouter } from "react-router-dom";
 
 export class Header extends Component {
+  navButtonClick = buttonName => {
+    if (buttonName === "Get Started") {
+      this.props.history.push("/front-end-configuration");
+    }
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -14,6 +21,7 @@ export class Header extends Component {
           }
           padding="1vw 3vw"
           navButtons={["Documentation", "Get Started"]}
+          onClickNavButton={buttonName => this.navButtonClick(buttonName)}
         />
         <div className="HeaderContainer">
           <div>
@@ -36,4 +44,4 @@ export class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
