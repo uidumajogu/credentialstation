@@ -1,4 +1,5 @@
 .FrontEndConfigurationContainer {
   display: flex;
   background-color: #f5f6fa;
+  width: 100%;
 }

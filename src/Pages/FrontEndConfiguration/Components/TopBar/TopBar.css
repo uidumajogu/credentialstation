@@ -1,0 +1,28 @@
+.TopBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(20px + 1vw) calc(50px + 1vw);
+}
+
+.TopBarContainer div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.TopBarContainer h3 {
+  color: #31394d;
+  font-size: calc(6px + 2vw);
+  margin: 0;
+}
+
+.TopBarContainer p {
+  color: #748aa1;
+  font-size: calc(3px + 1vw);
+}
+
+.TopBarContainer h5 {
+  color: #748aa1;
+  font-size: calc(5px + 1vw);
+  margin: 0;
+}
